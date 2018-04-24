@@ -16,5 +16,17 @@ namespace ControlEscolar
         {
             InitializeComponent();
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcercaDe frm = new AcercaDe();
+            frm.Show();
+        }
+
+        private void lblCrear_DoubleClick(object sender, EventArgs e)
+        {
+            frmDatosEscuela frm = new frmDatosEscuela();
+            frm.Show();
+        }
     }
 }

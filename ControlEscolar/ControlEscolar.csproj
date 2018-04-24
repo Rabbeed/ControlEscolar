@@ -45,14 +45,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDatosEscuela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosEscuela.Designer.cs">
+      <DependentUpon>frmDatosEscuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrupos.Designer.cs">
+      <DependentUpon>frmGrupos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosEscuela.resx">
+      <DependentUpon>frmDatosEscuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrupos.resx">
+      <DependentUpon>frmGrupos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
