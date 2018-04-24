@@ -30,19 +30,22 @@
         {
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.grbGrupos = new System.Windows.Forms.GroupBox();
+            this.grbAlumno = new System.Windows.Forms.GroupBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.grbGrupos.SuspendLayout();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.cboCalifs = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.grbAlumno.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardar.Location = new System.Drawing.Point(137, 271);
+            this.btnGuardar.Location = new System.Drawing.Point(135, 271);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(116, 23);
             this.btnGuardar.TabIndex = 5;
@@ -59,19 +62,22 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // grbGrupos
+            // grbAlumno
             // 
-            this.grbGrupos.Controls.Add(this.txtEdad);
-            this.grbGrupos.Controls.Add(this.label2);
-            this.grbGrupos.Controls.Add(this.txtNombre);
-            this.grbGrupos.Controls.Add(this.lblNombre);
-            this.grbGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grbGrupos.Location = new System.Drawing.Point(12, 12);
-            this.grbGrupos.Name = "grbGrupos";
-            this.grbGrupos.Size = new System.Drawing.Size(366, 246);
-            this.grbGrupos.TabIndex = 3;
-            this.grbGrupos.TabStop = false;
-            this.grbGrupos.Text = "Datos de Alumno";
+            this.grbAlumno.Controls.Add(this.label3);
+            this.grbAlumno.Controls.Add(this.label1);
+            this.grbAlumno.Controls.Add(this.cboCalifs);
+            this.grbAlumno.Controls.Add(this.txtEdad);
+            this.grbAlumno.Controls.Add(this.label2);
+            this.grbAlumno.Controls.Add(this.txtNombre);
+            this.grbAlumno.Controls.Add(this.lblNombre);
+            this.grbAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grbAlumno.Location = new System.Drawing.Point(12, 12);
+            this.grbAlumno.Name = "grbAlumno";
+            this.grbAlumno.Size = new System.Drawing.Size(362, 246);
+            this.grbAlumno.TabIndex = 3;
+            this.grbAlumno.TabStop = false;
+            this.grbAlumno.Text = "Datos de Alumno";
             // 
             // txtEdad
             // 
@@ -105,31 +111,58 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
-            // button1
+            // btnSalir
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(262, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.Location = new System.Drawing.Point(258, 271);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(116, 23);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // cboCalifs
+            // 
+            this.cboCalifs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboCalifs.FormattingEnabled = true;
+            this.cboCalifs.Location = new System.Drawing.Point(10, 119);
+            this.cboCalifs.Name = "cboCalifs";
+            this.cboCalifs.Size = new System.Drawing.Size(341, 98);
+            this.cboCalifs.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Calificaciones:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "[Supr] - Borrar calificación";
             // 
             // frmAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(386, 306);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(382, 306);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.grbGrupos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Controls.Add(this.grbAlumno);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAlumno";
             this.Text = "Agregar Alumno";
-            this.grbGrupos.ResumeLayout(false);
-            this.grbGrupos.PerformLayout();
+            this.grbAlumno.ResumeLayout(false);
+            this.grbAlumno.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -138,11 +171,14 @@
 
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.GroupBox grbGrupos;
+        private System.Windows.Forms.GroupBox grbAlumno;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboCalifs;
     }
 }

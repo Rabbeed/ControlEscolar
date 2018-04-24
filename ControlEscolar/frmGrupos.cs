@@ -16,5 +16,11 @@ namespace ControlEscolar
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAlumno frm = new frmAlumno();
+            frm.Show();
+        }
     }
 }

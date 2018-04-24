@@ -193,7 +193,7 @@
             this.Controls.Add(this.lblCrear);
             this.Controls.Add(this.lblEscuela);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "Control Escolar";
