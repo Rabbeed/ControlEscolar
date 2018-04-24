@@ -1,6 +1,6 @@
 ﻿namespace ControlEscolar
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -32,18 +32,18 @@
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblEscuela = new System.Windows.Forms.Label();
             this.lblCrear = new System.Windows.Forms.Label();
             this.lvwGrupos = new System.Windows.Forms.ListView();
-            this.label2 = new System.Windows.Forms.Label();
             this.colProfesor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colGrado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colAlumnos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMedia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,21 +83,6 @@
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
             // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de..";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -110,6 +95,21 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de..";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
             // lblEscuela
             // 
             this.lblEscuela.BackColor = System.Drawing.Color.White;
@@ -121,6 +121,7 @@
             this.lblEscuela.TabIndex = 1;
             this.lblEscuela.Text = "[Datos Escuela]";
             this.lblEscuela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEscuela.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblEscuela_MouseDown);
             // 
             // lblCrear
             // 
@@ -134,6 +135,7 @@
             this.lblCrear.Text = "Doble click [Crear o Modificar Escuela] -- Click derecho [Agregar Grupo]";
             this.lblCrear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCrear.DoubleClick += new System.EventHandler(this.lblCrear_DoubleClick);
+            this.lblCrear.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblCrear_MouseDown);
             // 
             // lvwGrupos
             // 
@@ -149,18 +151,7 @@
             this.lvwGrupos.TabIndex = 3;
             this.lvwGrupos.UseCompatibleStateImageBehavior = false;
             this.lvwGrupos.View = System.Windows.Forms.View.Details;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(383, 333);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(363, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Doble click [Modificar Grupo]";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lvwGrupos.DoubleClick += new System.EventHandler(this.lvwGrupos_DoubleClick);
             // 
             // colProfesor
             // 
@@ -179,7 +170,19 @@
             // 
             this.colMedia.Text = "Media";
             // 
-            // Form1
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(383, 333);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(363, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Doble click [Modificar Grupo]";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,8 +195,9 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Control Escolar";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

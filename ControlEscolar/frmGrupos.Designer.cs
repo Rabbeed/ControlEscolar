@@ -40,6 +40,8 @@
             this.colEdad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colCalif = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColPromedio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.grbGrupos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,12 +144,34 @@
             // 
             this.ColPromedio.Text = "Promedio";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.Location = new System.Drawing.Point(263, 340);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(116, 23);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Location = new System.Drawing.Point(13, 340);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(47, 23);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "+";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            // 
             // frmGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(388, 375);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lvwGrupos);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
@@ -175,5 +199,7 @@
         private System.Windows.Forms.ColumnHeader colEdad;
         private System.Windows.Forms.ColumnHeader colCalif;
         private System.Windows.Forms.ColumnHeader ColPromedio;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }
