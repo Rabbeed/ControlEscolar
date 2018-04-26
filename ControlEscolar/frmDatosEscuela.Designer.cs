@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtResponsable = new System.Windows.Forms.TextBox();
+            this.txtReponsable = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCrearEsc = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,12 +55,12 @@
             this.txtNombre.Size = new System.Drawing.Size(223, 20);
             this.txtNombre.TabIndex = 1;
             // 
-            // txtResponsable
+            // txtReponsable
             // 
-            this.txtResponsable.Location = new System.Drawing.Point(88, 48);
-            this.txtResponsable.Name = "txtResponsable";
-            this.txtResponsable.Size = new System.Drawing.Size(208, 20);
-            this.txtResponsable.TabIndex = 3;
+            this.txtReponsable.Location = new System.Drawing.Point(88, 48);
+            this.txtReponsable.Name = "txtReponsable";
+            this.txtReponsable.Size = new System.Drawing.Size(208, 20);
+            this.txtReponsable.TabIndex = 3;
             // 
             // label2
             // 
@@ -87,12 +87,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Dirección: ";
             // 
-            // txtTel
+            // txtTelefono
             // 
-            this.txtTel.Location = new System.Drawing.Point(73, 100);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(223, 20);
-            this.txtTel.TabIndex = 7;
+            this.txtTelefono.Location = new System.Drawing.Point(73, 100);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(223, 20);
+            this.txtTelefono.TabIndex = 7;
             // 
             // label4
             // 
@@ -112,6 +112,7 @@
             this.btnCrearEsc.TabIndex = 8;
             this.btnCrearEsc.Text = "Crear - Modificar";
             this.btnCrearEsc.UseVisualStyleBackColor = true;
+            this.btnCrearEsc.Click += new System.EventHandler(this.btnCrearEsc_Click);
             // 
             // frmDatosEscuela
             // 
@@ -120,17 +121,18 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(317, 166);
             this.Controls.Add(this.btnCrearEsc);
-            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtResponsable);
+            this.Controls.Add(this.txtReponsable);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDatosEscuela";
             this.Text = "frmDatosEscuela";
+            this.Load += new System.EventHandler(this.frmDatosEscuela_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,11 +142,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtResponsable;
+        private System.Windows.Forms.TextBox txtReponsable;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCrearEsc;
     }

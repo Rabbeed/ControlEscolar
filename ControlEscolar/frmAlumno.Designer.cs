@@ -30,16 +30,16 @@
         {
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.grbAlumno = new System.Windows.Forms.GroupBox();
+            this.grpAlumno = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboCalifs = new System.Windows.Forms.ComboBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.cboCalifs = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.grbAlumno.SuspendLayout();
+            this.grpAlumno.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -51,6 +51,7 @@
             this.btnGuardar.TabIndex = 5;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -61,23 +62,51 @@
             this.btnNuevo.TabIndex = 4;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // grbAlumno
+            // grpAlumno
             // 
-            this.grbAlumno.Controls.Add(this.label3);
-            this.grbAlumno.Controls.Add(this.label1);
-            this.grbAlumno.Controls.Add(this.cboCalifs);
-            this.grbAlumno.Controls.Add(this.txtEdad);
-            this.grbAlumno.Controls.Add(this.label2);
-            this.grbAlumno.Controls.Add(this.txtNombre);
-            this.grbAlumno.Controls.Add(this.lblNombre);
-            this.grbAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grbAlumno.Location = new System.Drawing.Point(12, 12);
-            this.grbAlumno.Name = "grbAlumno";
-            this.grbAlumno.Size = new System.Drawing.Size(362, 246);
-            this.grbAlumno.TabIndex = 3;
-            this.grbAlumno.TabStop = false;
-            this.grbAlumno.Text = "Datos de Alumno";
+            this.grpAlumno.Controls.Add(this.label3);
+            this.grpAlumno.Controls.Add(this.label1);
+            this.grpAlumno.Controls.Add(this.cboCalifs);
+            this.grpAlumno.Controls.Add(this.txtEdad);
+            this.grpAlumno.Controls.Add(this.label2);
+            this.grpAlumno.Controls.Add(this.txtNombre);
+            this.grpAlumno.Controls.Add(this.lblNombre);
+            this.grpAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grpAlumno.Location = new System.Drawing.Point(12, 12);
+            this.grpAlumno.Name = "grpAlumno";
+            this.grpAlumno.Size = new System.Drawing.Size(362, 246);
+            this.grpAlumno.TabIndex = 3;
+            this.grpAlumno.TabStop = false;
+            this.grpAlumno.Text = "Datos de Alumno";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "[Supr] - Borrar calificación";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Calificaciones:";
+            // 
+            // cboCalifs
+            // 
+            this.cboCalifs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboCalifs.FormattingEnabled = true;
+            this.cboCalifs.Location = new System.Drawing.Point(10, 119);
+            this.cboCalifs.Name = "cboCalifs";
+            this.cboCalifs.Size = new System.Drawing.Size(341, 98);
+            this.cboCalifs.TabIndex = 4;
             // 
             // txtEdad
             // 
@@ -120,33 +149,7 @@
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
-            // 
-            // cboCalifs
-            // 
-            this.cboCalifs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.cboCalifs.FormattingEnabled = true;
-            this.cboCalifs.Location = new System.Drawing.Point(10, 119);
-            this.cboCalifs.Name = "cboCalifs";
-            this.cboCalifs.Size = new System.Drawing.Size(341, 98);
-            this.cboCalifs.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Calificaciones:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 220);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "[Supr] - Borrar calificación";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmAlumno
             // 
@@ -157,12 +160,12 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.grbAlumno);
+            this.Controls.Add(this.grpAlumno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAlumno";
             this.Text = "Agregar Alumno";
-            this.grbAlumno.ResumeLayout(false);
-            this.grbAlumno.PerformLayout();
+            this.grpAlumno.ResumeLayout(false);
+            this.grpAlumno.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -171,7 +174,7 @@
 
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.GroupBox grbAlumno;
+        private System.Windows.Forms.GroupBox grpAlumno;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;

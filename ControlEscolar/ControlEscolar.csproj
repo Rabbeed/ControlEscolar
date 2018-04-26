@@ -51,17 +51,21 @@
     <Compile Include="AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno.cs" />
+    <Compile Include="Escuela.cs" />
     <Compile Include="frmAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAlumno.Designer.cs">
       <DependentUpon>frmAlumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Globales.cs" />
+    <Compile Include="Grupo.cs" />
+    <Compile Include="frmEscuela.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="frmEscuela.Designer.cs">
+      <DependentUpon>frmEscuela.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosEscuela.cs">
       <SubType>Form</SubType>
@@ -83,8 +87,8 @@
     <EmbeddedResource Include="frmAlumno.resx">
       <DependentUpon>frmAlumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="frmEscuela.resx">
+      <DependentUpon>frmEscuela.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosEscuela.resx">
       <DependentUpon>frmDatosEscuela.cs</DependentUpon>

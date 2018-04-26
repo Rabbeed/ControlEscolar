@@ -1,6 +1,6 @@
 ﻿namespace ControlEscolar
 {
-    partial class Main
+    partial class frmEscuela
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -44,6 +44,8 @@
             this.colAlumnos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMedia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +77,7 @@
             this.abrirToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.abrirToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.abrirToolStripMenuItem1.Text = "Abrir";
+            this.abrirToolStripMenuItem1.Click += new System.EventHandler(this.abrirToolStripMenuItem1_Click);
             // 
             // guardarToolStripMenuItem
             // 
@@ -82,6 +85,7 @@
             this.guardarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
+            this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -94,6 +98,7 @@
             this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -121,7 +126,7 @@
             this.lblEscuela.TabIndex = 1;
             this.lblEscuela.Text = "[Datos Escuela]";
             this.lblEscuela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblEscuela.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblEscuela_MouseDown);
+//            this.lblEscuela.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblEscuela_MouseDown);
             // 
             // lblCrear
             // 
@@ -181,8 +186,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Doble click [Modificar Grupo]";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
-            // Main
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // frmEscuela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,8 +205,9 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Main";
+            this.Name = "frmEscuela";
             this.Text = "Control Escolar";
+            this.Activated += new System.EventHandler(this.frmEscuela_Activated);
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -223,6 +234,8 @@
         private System.Windows.Forms.ColumnHeader colAlumnos;
         private System.Windows.Forms.ColumnHeader colMedia;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

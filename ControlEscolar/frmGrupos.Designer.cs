@@ -28,52 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grbGrupos = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtProfesor = new System.Windows.Forms.TextBox();
+            this.grpDatos = new System.Windows.Forms.GroupBox();
             this.txtGrado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtProfesor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.lvwGrupos = new System.Windows.Forms.ListView();
+            this.lvwAlumnos = new System.Windows.Forms.ListView();
             this.colNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colEdad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colCalif = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColPromedio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.grbGrupos.SuspendLayout();
+            this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grbGrupos
+            // grpDatos
             // 
-            this.grbGrupos.Controls.Add(this.txtGrado);
-            this.grbGrupos.Controls.Add(this.label2);
-            this.grbGrupos.Controls.Add(this.txtProfesor);
-            this.grbGrupos.Controls.Add(this.label1);
-            this.grbGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grbGrupos.Location = new System.Drawing.Point(13, 13);
-            this.grbGrupos.Name = "grbGrupos";
-            this.grbGrupos.Size = new System.Drawing.Size(366, 90);
-            this.grbGrupos.TabIndex = 0;
-            this.grbGrupos.TabStop = false;
-            this.grbGrupos.Text = "Datos del Grupo";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Profesor:";
-            // 
-            // txtProfesor
-            // 
-            this.txtProfesor.Location = new System.Drawing.Point(63, 31);
-            this.txtProfesor.Name = "txtProfesor";
-            this.txtProfesor.Size = new System.Drawing.Size(288, 20);
-            this.txtProfesor.TabIndex = 1;
+            this.grpDatos.Controls.Add(this.txtGrado);
+            this.grpDatos.Controls.Add(this.label2);
+            this.grpDatos.Controls.Add(this.txtProfesor);
+            this.grpDatos.Controls.Add(this.label1);
+            this.grpDatos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grpDatos.Location = new System.Drawing.Point(13, 13);
+            this.grpDatos.Name = "grpDatos";
+            this.grpDatos.Size = new System.Drawing.Size(366, 90);
+            this.grpDatos.TabIndex = 0;
+            this.grpDatos.TabStop = false;
+            this.grpDatos.Text = "Datos del Grupo";
             // 
             // txtGrado
             // 
@@ -91,6 +75,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Grado:";
             // 
+            // txtProfesor
+            // 
+            this.txtProfesor.Location = new System.Drawing.Point(63, 31);
+            this.txtProfesor.Name = "txtProfesor";
+            this.txtProfesor.Size = new System.Drawing.Size(288, 20);
+            this.txtProfesor.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Profesor:";
+            // 
             // btnNuevo
             // 
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -100,6 +100,7 @@
             this.btnNuevo.TabIndex = 1;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnGuardar
             // 
@@ -110,20 +111,22 @@
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // lvwGrupos
+            // lvwAlumnos
             // 
-            this.lvwGrupos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvwAlumnos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colNombre,
             this.colEdad,
             this.colCalif,
             this.ColPromedio});
-            this.lvwGrupos.Location = new System.Drawing.Point(12, 157);
-            this.lvwGrupos.Name = "lvwGrupos";
-            this.lvwGrupos.Size = new System.Drawing.Size(367, 167);
-            this.lvwGrupos.TabIndex = 3;
-            this.lvwGrupos.UseCompatibleStateImageBehavior = false;
-            this.lvwGrupos.View = System.Windows.Forms.View.Details;
+            this.lvwAlumnos.Location = new System.Drawing.Point(12, 157);
+            this.lvwAlumnos.Name = "lvwAlumnos";
+            this.lvwAlumnos.Size = new System.Drawing.Size(367, 167);
+            this.lvwAlumnos.TabIndex = 3;
+            this.lvwAlumnos.UseCompatibleStateImageBehavior = false;
+            this.lvwAlumnos.View = System.Windows.Forms.View.Details;
+            this.lvwAlumnos.DoubleClick += new System.EventHandler(this.lvwAlumnos_DoubleClick);
             // 
             // colNombre
             // 
@@ -153,6 +156,7 @@
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnAgregar
             // 
@@ -173,29 +177,31 @@
             this.ClientSize = new System.Drawing.Size(388, 375);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.lvwGrupos);
+            this.Controls.Add(this.lvwAlumnos);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.grbGrupos);
+            this.Controls.Add(this.grpDatos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmGrupos";
             this.Text = "Creación de Grupos";
-            this.grbGrupos.ResumeLayout(false);
-            this.grbGrupos.PerformLayout();
+            this.Activated += new System.EventHandler(this.frmGrupos_Activated);
+            this.Load += new System.EventHandler(this.frmGrupos_Load);
+            this.grpDatos.ResumeLayout(false);
+            this.grpDatos.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbGrupos;
+        private System.Windows.Forms.GroupBox grpDatos;
         private System.Windows.Forms.TextBox txtGrado;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtProfesor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.ListView lvwGrupos;
+        private System.Windows.Forms.ListView lvwAlumnos;
         private System.Windows.Forms.ColumnHeader colNombre;
         private System.Windows.Forms.ColumnHeader colEdad;
         private System.Windows.Forms.ColumnHeader colCalif;
