@@ -126,7 +126,6 @@
             this.lblEscuela.TabIndex = 1;
             this.lblEscuela.Text = "[Datos Escuela]";
             this.lblEscuela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-//            this.lblEscuela.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblEscuela_MouseDown);
             // 
             // lblCrear
             // 
@@ -186,7 +185,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Doble click [Modificar Grupo]";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
             // openFileDialog1
             // 

@@ -31,6 +31,8 @@ namespace ControlEscolar
 
         private void lvwGrupos_DoubleClick(object sender, EventArgs e)
         {
+            int pos = lvwGrupos.FocusedItem.Index;
+            Globales.miGrupo = Globales.miEscuela.ObtenGrupos()[pos];
             frmGrupos frm = new frmGrupos();
             frm.Show();
         }
@@ -116,12 +118,6 @@ namespace ControlEscolar
             }
         }
 
-        private void label2_DoubleClick(object sender, EventArgs e)
-        {
-            int pos = lvwGrupos.FocusedItem.Index;
-            Globales.miGrupo = Globales.miEscuela.ObtenGrupos()[pos];
-            frmGrupos frm = new frmGrupos();
-            frm.Show();
-        }
+
     }
 }
