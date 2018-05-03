@@ -21,5 +21,26 @@ namespace Segundo_Examen_Parcial
         {
             this.Close();
         }
+
+        private void lblRed_DoubleClick(object sender, EventArgs e)
+        {
+            frmDatosRed frm = new frmDatosRed();
+            frm.Show();
+        }
+
+        private void lblRed_MouseDown(object sender, MouseEventArgs e)
+        {
+           /* if (e.Button == MouseButtons.Right)
+            {
+                if (Globales.miEscuela == null)
+                    MessageBox.Show("Debes Crear la escuela antes de agregar grupos");
+                else
+                {
+                    Globales.miGrupo = null;
+                    frmGrupos frm = new frmGrupos();
+                    frm.Show();
+                }
+            }*/
+        }
     }
 }

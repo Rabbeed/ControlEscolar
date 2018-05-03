@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Segundo_Examen_Parcial
 {
-    public partial class frmNodos : Form
+    public partial class frmVulnerabilidad : Form
     {
-        public frmNodos()
+        public frmVulnerabilidad()
         {
             InitializeComponent();
-        }
-
-        private void lvwAlumnos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
