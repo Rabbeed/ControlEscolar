@@ -126,6 +126,8 @@
             this.lblEscuela.TabIndex = 1;
             this.lblEscuela.Text = "[Datos Escuela]";
             this.lblEscuela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEscuela.DoubleClick += new System.EventHandler(this.lblEscuela_DoubleClick);
+            this.lblEscuela.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblEscuela_MouseDown);
             // 
             // lblCrear
             // 

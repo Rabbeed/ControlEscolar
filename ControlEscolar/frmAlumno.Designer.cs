@@ -107,6 +107,9 @@
             this.cboCalifs.Name = "cboCalifs";
             this.cboCalifs.Size = new System.Drawing.Size(341, 98);
             this.cboCalifs.TabIndex = 4;
+            this.cboCalifs.SelectedIndexChanged += new System.EventHandler(this.cboCalifs_SelectedIndexChanged);
+            this.cboCalifs.Click += new System.EventHandler(this.cboCalifs_Click);
+            this.cboCalifs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboCalifs_KeyPress);
             // 
             // txtEdad
             // 
@@ -164,6 +167,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAlumno";
             this.Text = "Agregar Alumno";
+            this.Activated += new System.EventHandler(this.frmAlumno_Activated);
+            this.Load += new System.EventHandler(this.frmAlumno_Load);
             this.grpAlumno.ResumeLayout(false);
             this.grpAlumno.PerformLayout();
             this.ResumeLayout(false);

@@ -25,8 +25,7 @@ namespace ControlEscolar
 
         private void lblCrear_DoubleClick(object sender, EventArgs e)
         {
-            frmDatosEscuela frm = new frmDatosEscuela();
-            frm.Show();
+          
         }
 
         private void lvwGrupos_DoubleClick(object sender, EventArgs e)
@@ -45,18 +44,7 @@ namespace ControlEscolar
 
         private void lblCrear_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-                if (Globales.miEscuela == null
-                )
-                    MessageBox.Show("Debes Crear la escuela antes de agregar grupos");
-                else
-                {
-                    Globales.miGrupo = null ;
-                    frmGrupos frm = new frmGrupos();
-                    frm.Show();
-                }
-            }
+            
         }
 
         private void abrirToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -118,6 +106,26 @@ namespace ControlEscolar
             }
         }
 
+        private void lblEscuela_DoubleClick(object sender, EventArgs e)
+        {
+            frmDatosEscuela frm = new frmDatosEscuela();
+            frm.Show();
+        }
 
+        private void lblEscuela_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (Globales.miEscuela == null
+                )
+                    MessageBox.Show("Debes Crear la escuela antes de agregar grupos");
+                else
+                {
+                    Globales.miGrupo = null;
+                    frmGrupos frm = new frmGrupos();
+                    frm.Show();
+                }
+            }
+        }
     }
 }

@@ -56,5 +56,49 @@ namespace ControlEscolar
             btnGuardar.Enabled = false;
             txtNombre.Focus();
         }
+
+        private void frmAlumno_Load(object sender, EventArgs e)
+        {
+            grpAlumno.Enabled = false;
+            btnGuardar.Enabled = false;
+        }
+
+        private void frmAlumno_Activated(object sender, EventArgs e)
+        {
+            if (Globales.miAlumno != null)
+            {
+                txtNombre.Text = Globales.miAlumno.Nombre;
+                txtEdad.Text = Globales.miAlumno.Edad.ToString();
+                cboCalifs.Items.Clear();
+                foreach (float calif in Globales.miAlumno.ObtenCalifs()) cboCalifs.Items.Add(calif);
+                btnNuevo.Enabled = false;
+                grpAlumno.Enabled = true;
+                btnGuardar.Enabled = true;
+            }
+        }
+
+        private void cboCalifs_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                float cal = float.Parse(cboCalifs.Text);
+                if (cboCalifs.Text.Length != 0 && (cal >= 10.00f && cal <= 100.00f))
+                    cboCalifs.Items.Add(float.Parse(cboCalifs.Text));
+            }
+            else
+                if (e.KeyChar == 8)
+                    if (cboCalifs.SelectedIndex != -1)
+                        cboCalifs.Items.RemoveAt(cboCalifs.SelectedIndex);
+        }
+
+        private void cboCalifs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboCalifs_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
