@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlEscolar", "ControlEscolar\ControlEscolar.csproj", "{5B4B088C-C803-4F38-84B0-72C3B16A10D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segundo Examen Parcial", "Segundo Examen Parcial\Segundo Examen Parcial.csproj", "{96DCFD56-D518-478A-AF14-74B3D2A27822}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5B4B088C-C803-4F38-84B0-72C3B16A10D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B4B088C-C803-4F38-84B0-72C3B16A10D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B4B088C-C803-4F38-84B0-72C3B16A10D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DCFD56-D518-478A-AF14-74B3D2A27822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DCFD56-D518-478A-AF14-74B3D2A27822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DCFD56-D518-478A-AF14-74B3D2A27822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DCFD56-D518-478A-AF14-74B3D2A27822}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
