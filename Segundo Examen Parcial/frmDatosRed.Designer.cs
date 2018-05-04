@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCrearEsc = new System.Windows.Forms.Button();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.btnCrearRed = new System.Windows.Forms.Button();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtReponsable = new System.Windows.Forms.TextBox();
+            this.txtPropietario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnCrearEsc
+            // btnCrearRed
             // 
-            this.btnCrearEsc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCrearEsc.Location = new System.Drawing.Point(173, 121);
-            this.btnCrearEsc.Name = "btnCrearEsc";
-            this.btnCrearEsc.Size = new System.Drawing.Size(125, 35);
-            this.btnCrearEsc.TabIndex = 17;
-            this.btnCrearEsc.Text = "Crear - Modificar";
-            this.btnCrearEsc.UseVisualStyleBackColor = true;
+            this.btnCrearRed.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCrearRed.Location = new System.Drawing.Point(173, 121);
+            this.btnCrearRed.Name = "btnCrearRed";
+            this.btnCrearRed.Size = new System.Drawing.Size(125, 35);
+            this.btnCrearRed.TabIndex = 17;
+            this.btnCrearRed.Text = "Crear - Modificar";
+            this.btnCrearRed.UseVisualStyleBackColor = true;
             // 
-            // txtDireccion
+            // txtDomicilio
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(75, 95);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(223, 20);
-            this.txtDireccion.TabIndex = 14;
+            this.txtDomicilio.Location = new System.Drawing.Point(75, 95);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(223, 20);
+            this.txtDomicilio.TabIndex = 14;
             // 
             // label3
             // 
@@ -63,12 +63,12 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Domicilio: ";
             // 
-            // txtReponsable
+            // txtPropietario
             // 
-            this.txtReponsable.Location = new System.Drawing.Point(75, 62);
-            this.txtReponsable.Name = "txtReponsable";
-            this.txtReponsable.Size = new System.Drawing.Size(223, 20);
-            this.txtReponsable.TabIndex = 12;
+            this.txtPropietario.Location = new System.Drawing.Point(75, 62);
+            this.txtPropietario.Name = "txtPropietario";
+            this.txtPropietario.Size = new System.Drawing.Size(223, 20);
+            this.txtPropietario.TabIndex = 12;
             // 
             // label2
             // 
@@ -79,12 +79,12 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Propietario:";
             // 
-            // txtNombre
+            // txtEmpresa
             // 
-            this.txtNombre.Location = new System.Drawing.Point(75, 29);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(223, 20);
-            this.txtNombre.TabIndex = 10;
+            this.txtEmpresa.Location = new System.Drawing.Point(75, 29);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(223, 20);
+            this.txtEmpresa.TabIndex = 10;
             // 
             // label1
             // 
@@ -99,13 +99,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 159);
-            this.Controls.Add(this.btnCrearEsc);
-            this.Controls.Add(this.txtDireccion);
+            this.ClientSize = new System.Drawing.Size(311, 166);
+            this.Controls.Add(this.btnCrearRed);
+            this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtReponsable);
+            this.Controls.Add(this.txtPropietario);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDatosRed";
@@ -117,12 +117,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCrearEsc;
-        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Button btnCrearRed;
+        private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtReponsable;
+        private System.Windows.Forms.TextBox txtPropietario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtEmpresa;
         private System.Windows.Forms.Label label1;
     }
 }

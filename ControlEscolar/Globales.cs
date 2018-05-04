@@ -17,6 +17,7 @@ namespace ControlEscolar
         public static Escuela miEscuela;
         public static Grupo miGrupo;
         public static Alumno miAlumno;
+
         public static void Serializar(string archivo)
         {
             FileStream fs = new FileStream(archivo, FileMode.OpenOrCreate, FileAccess.Write);

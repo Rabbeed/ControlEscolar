@@ -32,6 +32,7 @@ namespace ControlEscolar
             get { return nombreProfesor; }
             set { nombreProfesor = value; }
         }
+
         public void AgregaAlumno(Alumno al)
         {
             alumnos.Add(al);

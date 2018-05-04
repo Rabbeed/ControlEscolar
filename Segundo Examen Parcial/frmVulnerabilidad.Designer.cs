@@ -32,6 +32,8 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.textDesc = new System.Windows.Forms.TextBox();
             this.textVendedor = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textDesc = new System.Windows.Forms.TextBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,21 @@
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos vulnerabilidad";
             // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(78, 169);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.TabIndex = 11;
+            // 
+            // textDesc
+            // 
+            this.textDesc.Location = new System.Drawing.Point(78, 83);
+            this.textDesc.Multiline = true;
+            this.textDesc.Name = "textDesc";
+            this.textDesc.Size = new System.Drawing.Size(263, 42);
+            this.textDesc.TabIndex = 10;
+            // 
             // textVendedor
             // 
             this.textVendedor.Location = new System.Drawing.Point(78, 52);
@@ -131,10 +146,14 @@
             // cboTipo
             // 
             this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Items.AddRange(new object[] {
+            "Local",
+            "Remota"});
             this.cboTipo.Location = new System.Drawing.Point(78, 137);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(200, 21);
             this.cboTipo.TabIndex = 3;
+            this.cboTipo.Text = "Selecciona un tipo";
             // 
             // label2
             // 
@@ -160,21 +179,6 @@
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Clave:";
-            // 
-            // textDesc
-            // 
-            this.textDesc.Location = new System.Drawing.Point(78, 83);
-            this.textDesc.Multiline = true;
-            this.textDesc.Name = "textDesc";
-            this.textDesc.Size = new System.Drawing.Size(263, 42);
-            this.textDesc.TabIndex = 10;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Location = new System.Drawing.Point(78, 169);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 11;
             // 
             // frmVulnerabilidad
             // 

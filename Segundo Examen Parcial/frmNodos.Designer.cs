@@ -31,9 +31,15 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lvwVuln = new System.Windows.Forms.ListView();
+            this.colClave = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colVendedor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colDesc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnFecha = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.cboSO = new System.Windows.Forms.ComboBox();
             this.txtPuertosA = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSaltosO = new System.Windows.Forms.TextBox();
@@ -44,14 +50,13 @@
             this.txtIP = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cboSO = new System.Windows.Forms.ComboBox();
             this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.Location = new System.Drawing.Point(186, 366);
+            this.btnSalir.Location = new System.Drawing.Point(712, 182);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(108, 23);
             this.btnSalir.TabIndex = 11;
@@ -61,7 +66,7 @@
             // btnAgregar
             // 
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar.Location = new System.Drawing.Point(18, 366);
+            this.btnAgregar.Location = new System.Drawing.Point(310, 183);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(47, 23);
             this.btnAgregar.TabIndex = 10;
@@ -70,13 +75,44 @@
             // 
             // lvwVuln
             // 
-            this.lvwVuln.Location = new System.Drawing.Point(18, 241);
+            this.lvwVuln.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colClave,
+            this.colVendedor,
+            this.colDesc,
+            this.colTipo,
+            this.columnFecha});
+            this.lvwVuln.Location = new System.Drawing.Point(310, 28);
             this.lvwVuln.Name = "lvwVuln";
-            this.lvwVuln.Size = new System.Drawing.Size(276, 119);
+            this.lvwVuln.Size = new System.Drawing.Size(510, 148);
             this.lvwVuln.TabIndex = 9;
             this.lvwVuln.UseCompatibleStateImageBehavior = false;
             this.lvwVuln.View = System.Windows.Forms.View.Details;
             this.lvwVuln.SelectedIndexChanged += new System.EventHandler(this.lvwAlumnos_SelectedIndexChanged);
+            // 
+            // colClave
+            // 
+            this.colClave.Text = "Clave";
+            this.colClave.Width = 80;
+            // 
+            // colVendedor
+            // 
+            this.colVendedor.Text = "Vendedor";
+            this.colVendedor.Width = 79;
+            // 
+            // colDesc
+            // 
+            this.colDesc.Text = "Descripción";
+            this.colDesc.Width = 181;
+            // 
+            // colTipo
+            // 
+            this.colTipo.Text = "Tipo";
+            this.colTipo.Width = 68;
+            // 
+            // columnFecha
+            // 
+            this.columnFecha.Text = "Fecha Aparición";
+            this.columnFecha.Width = 97;
             // 
             // btnGuardar
             // 
@@ -117,6 +153,21 @@
             this.grpDatos.TabIndex = 6;
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos del Nodo";
+            // 
+            // cboSO
+            // 
+            this.cboSO.FormattingEnabled = true;
+            this.cboSO.Items.AddRange(new object[] {
+            "Windows",
+            "Linux",
+            "IOS",
+            "Android",
+            "Otro"});
+            this.cboSO.Location = new System.Drawing.Point(106, 124);
+            this.cboSO.Name = "cboSO";
+            this.cboSO.Size = new System.Drawing.Size(155, 21);
+            this.cboSO.TabIndex = 10;
+            this.cboSO.Text = "Selecciona un S.O";
             // 
             // txtPuertosA
             // 
@@ -162,10 +213,15 @@
             // cboTipo
             // 
             this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Items.AddRange(new object[] {
+            "Servidor",
+            "Equipo activo",
+            "Computadora"});
             this.cboTipo.Location = new System.Drawing.Point(43, 45);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(218, 21);
             this.cboTipo.TabIndex = 3;
+            this.cboTipo.Text = "Selecciona un tipo";
             // 
             // label2
             // 
@@ -195,26 +251,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 225);
+            this.label6.Location = new System.Drawing.Point(307, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Vulnerabilidades";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // cboSO
-            // 
-            this.cboSO.FormattingEnabled = true;
-            this.cboSO.Location = new System.Drawing.Point(106, 124);
-            this.cboSO.Name = "cboSO";
-            this.cboSO.Size = new System.Drawing.Size(155, 21);
-            this.cboSO.TabIndex = 10;
-            // 
             // frmNodos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 403);
+            this.ClientSize = new System.Drawing.Size(832, 217);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAgregar);
@@ -251,5 +299,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cboSO;
+        private System.Windows.Forms.ColumnHeader colClave;
+        private System.Windows.Forms.ColumnHeader colVendedor;
+        private System.Windows.Forms.ColumnHeader colDesc;
+        private System.Windows.Forms.ColumnHeader colTipo;
+        private System.Windows.Forms.ColumnHeader columnFecha;
     }
 }
