@@ -115,5 +115,10 @@ namespace Segundo_Examen_Parcial
             frmVulnerabilidad frm = new frmVulnerabilidad();
             frm.Show();
         }
+
+        private void lvwVuln_MouseDown(object sender, MouseEventArgs e)
+        {
+       
+        }
     }
 }

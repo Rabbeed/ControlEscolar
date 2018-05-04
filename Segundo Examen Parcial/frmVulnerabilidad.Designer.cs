@@ -193,6 +193,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "frmVulnerabilidad";
             this.Text = "Vulnerabilidad";
             this.Activated += new System.EventHandler(this.frmVulnerabilidad_Activated);

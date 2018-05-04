@@ -90,6 +90,7 @@
             this.lvwVuln.UseCompatibleStateImageBehavior = false;
             this.lvwVuln.View = System.Windows.Forms.View.Details;
             this.lvwVuln.DoubleClick += new System.EventHandler(this.lvwVuln_DoubleClick);
+            this.lvwVuln.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lvwVuln_MouseDown);
             // 
             // colClave
             // 
@@ -274,6 +275,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.grpDatos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "frmNodos";
             this.Text = "Nodo";
             this.Activated += new System.EventHandler(this.frmNodos_Activated);

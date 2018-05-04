@@ -145,6 +145,7 @@
             this.lvwNodos.UseCompatibleStateImageBehavior = false;
             this.lvwNodos.View = System.Windows.Forms.View.Details;
             this.lvwNodos.DoubleClick += new System.EventHandler(this.lvwNodos_DoubleClick);
+            this.lvwNodos.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lvwNodos_MouseDown);
             // 
             // coIiP
             // 
@@ -233,6 +234,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "Ethical Hackers";
             this.Activated += new System.EventHandler(this.frmMain_Activated);

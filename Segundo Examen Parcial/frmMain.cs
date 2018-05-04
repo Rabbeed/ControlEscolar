@@ -118,5 +118,13 @@ namespace Segundo_Examen_Parcial
                 }
             }
         }
+
+        private void lvwNodos_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                
+            }
+        }
     }
 }

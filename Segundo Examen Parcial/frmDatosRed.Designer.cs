@@ -100,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(311, 166);
             this.Controls.Add(this.btnCrearRed);
             this.Controls.Add(this.txtDomicilio);
@@ -109,6 +110,7 @@
             this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "frmDatosRed";
             this.Text = "Red";
             this.Load += new System.EventHandler(this.frmDatosRed_Load);
