@@ -15,7 +15,11 @@ namespace Segundo_Examen_Parcial
         private string tipo;
         private DateTime fecha;
 
-        public Vulnerabilidad(string _clave, string _vendedor,string _desc, string _tipo, DateTime _fecha) : this()
+        public Vulnerabilidad()
+        {
+        }
+
+        public Vulnerabilidad(string _clave, string _vendedor,string _desc, string _tipo, DateTime _fecha): this()
         {
             clave = _clave;
             vendedor = _vendedor;

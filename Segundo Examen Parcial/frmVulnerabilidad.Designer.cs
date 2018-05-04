@@ -33,8 +33,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.grpDatos = new System.Windows.Forms.GroupBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.textDesc = new System.Windows.Forms.TextBox();
-            this.textVendedor = new System.Windows.Forms.TextBox();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.txtVendedor = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@
             this.btnNuevo.TabIndex = 8;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnGuardar
             // 
@@ -64,6 +65,7 @@
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
@@ -74,12 +76,13 @@
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // grpDatos
             // 
             this.grpDatos.Controls.Add(this.dtpFecha);
-            this.grpDatos.Controls.Add(this.textDesc);
-            this.grpDatos.Controls.Add(this.textVendedor);
+            this.grpDatos.Controls.Add(this.txtDesc);
+            this.grpDatos.Controls.Add(this.txtVendedor);
             this.grpDatos.Controls.Add(this.label5);
             this.grpDatos.Controls.Add(this.label4);
             this.grpDatos.Controls.Add(this.label3);
@@ -102,20 +105,20 @@
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 11;
             // 
-            // textDesc
+            // txtDesc
             // 
-            this.textDesc.Location = new System.Drawing.Point(78, 83);
-            this.textDesc.Multiline = true;
-            this.textDesc.Name = "textDesc";
-            this.textDesc.Size = new System.Drawing.Size(263, 42);
-            this.textDesc.TabIndex = 10;
+            this.txtDesc.Location = new System.Drawing.Point(78, 83);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(263, 42);
+            this.txtDesc.TabIndex = 10;
             // 
-            // textVendedor
+            // txtVendedor
             // 
-            this.textVendedor.Location = new System.Drawing.Point(78, 52);
-            this.textVendedor.Name = "textVendedor";
-            this.textVendedor.Size = new System.Drawing.Size(264, 20);
-            this.textVendedor.TabIndex = 9;
+            this.txtVendedor.Location = new System.Drawing.Point(78, 52);
+            this.txtVendedor.Name = "txtVendedor";
+            this.txtVendedor.Size = new System.Drawing.Size(264, 20);
+            this.txtVendedor.TabIndex = 9;
             // 
             // label5
             // 
@@ -192,6 +195,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmVulnerabilidad";
             this.Text = "Vulnerabilidad";
+            this.Activated += new System.EventHandler(this.frmVulnerabilidad_Activated);
+            this.Load += new System.EventHandler(this.frmVulnerabilidad_Load);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.ResumeLayout(false);
@@ -204,7 +209,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.GroupBox grpDatos;
-        private System.Windows.Forms.TextBox textVendedor;
+        private System.Windows.Forms.TextBox txtVendedor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -213,6 +218,6 @@
         private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.TextBox textDesc;
+        private System.Windows.Forms.TextBox txtDesc;
     }
 }

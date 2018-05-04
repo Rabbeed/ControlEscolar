@@ -9,7 +9,7 @@ namespace Segundo_Examen_Parcial
     [Serializable()]
     class Nodo
     {
-        private int ip;
+        private string ip;
         private string tipo;
         private int pAbiertos;
         private int sObjetivo;
@@ -21,7 +21,7 @@ namespace Segundo_Examen_Parcial
             vulnerabilidades = new List<Vulnerabilidad>();
         }
 
-        public Nodo(int _ip, string _tipo, int _pAbiertos, int _sObjetivo, string _SO) : this()
+        public Nodo(string _ip, string _tipo, int _pAbiertos, int _sObjetivo, string _SO) : this()
         {
             ip = _ip;
             tipo = _tipo;
@@ -34,7 +34,7 @@ namespace Segundo_Examen_Parcial
         public string Tipo { get => tipo; set => tipo = value; }
         public int PAbiertos { get => pAbiertos; set => pAbiertos = value; }
         public int SObjetivo { get => sObjetivo; set => sObjetivo = value; }
-        public int Ip { get => ip; set => ip = value; }
+        public string Ip { get => ip; set => ip = value; }
         public string So { get => so; set => so = value; }
 
         public void agregarVulnerabilidad(Vulnerabilidad vul)

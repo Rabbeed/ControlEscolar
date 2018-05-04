@@ -77,26 +77,26 @@
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
             this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(113, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -208,9 +208,9 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(267, 317);
+            this.label2.Location = new System.Drawing.Point(271, 317);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(564, 34);
+            this.label2.Size = new System.Drawing.Size(560, 34);
             this.label2.TabIndex = 8;
             this.label2.Text = "Doble click [Modificar Nodo]";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

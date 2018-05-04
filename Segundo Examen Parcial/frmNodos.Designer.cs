@@ -62,6 +62,7 @@
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnAgregar
             // 
@@ -72,6 +73,7 @@
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "+";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lvwVuln
             // 
@@ -87,7 +89,7 @@
             this.lvwVuln.TabIndex = 9;
             this.lvwVuln.UseCompatibleStateImageBehavior = false;
             this.lvwVuln.View = System.Windows.Forms.View.Details;
-            this.lvwVuln.SelectedIndexChanged += new System.EventHandler(this.lvwAlumnos_SelectedIndexChanged);
+            this.lvwVuln.DoubleClick += new System.EventHandler(this.lvwVuln_DoubleClick);
             // 
             // colClave
             // 
@@ -123,6 +125,7 @@
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -133,6 +136,7 @@
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // grpDatos
             // 
@@ -256,7 +260,6 @@
             this.label6.Size = new System.Drawing.Size(84, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Vulnerabilidades";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // frmNodos
             // 
@@ -273,6 +276,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmNodos";
             this.Text = "Nodo";
+            this.Activated += new System.EventHandler(this.frmNodos_Activated);
+            this.Load += new System.EventHandler(this.frmNodos_Load);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.ResumeLayout(false);

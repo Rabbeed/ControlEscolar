@@ -46,6 +46,7 @@
             this.btnCrearRed.TabIndex = 17;
             this.btnCrearRed.Text = "Crear - Modificar";
             this.btnCrearRed.UseVisualStyleBackColor = true;
+            this.btnCrearRed.Click += new System.EventHandler(this.btnCrearRed_Click);
             // 
             // txtDomicilio
             // 
@@ -110,6 +111,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDatosRed";
             this.Text = "Red";
+            this.Load += new System.EventHandler(this.frmDatosRed_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
